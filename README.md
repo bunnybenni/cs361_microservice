@@ -20,5 +20,5 @@ To request data, run the `weather_service.py` program while having the three req
 ## Receiving Data
 Once the `weather_service.py` program has successfully run, the JSON weather data for the given location and date range will be available in a `weather_data.txt` file for the user to use in whatever manner they see fit.
 
-##UML Diagram
-coming soon
+## UML Diagram
+![A UML diagram showing the flow of the weather microservice](uml.png)
