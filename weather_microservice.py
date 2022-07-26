@@ -2,13 +2,16 @@
 # date: 7/25/2022
 # class: CS 361
 # description: Microservice Implementation
-import json
+               # A microservice that takes an API key, a zip code/city, and a number of days up to 10 to retrieve data
+               # for from .txt files, and then it retrieves the weather data from http://api.weatherapi.com/ and writes
+               # the data to a weather_data.txt file that can be used by the user.
 
+import json
 import requests
 
-api_key_path = "api_key.txt"
-zipcode_path = "zipcode.txt"
-days_out_path = "days_out.txt"
+api_key_path = "api_key.txt"  # sign up at weatherapi.com for a free account to get an API key to put in the .txt file
+zipcode_path = "zipcode.txt"  # zip codes and city/state queries both work here
+days_out_path = "days_out.txt"  # data can be obtained up to 10 days out from the current date
 write_txt_path = "weather_data.txt"
 
 BASE_URL = "http://api.weatherapi.com/v1/forecast.json?"
