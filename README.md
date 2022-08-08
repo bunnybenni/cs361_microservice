@@ -15,7 +15,7 @@ The `zipcode.txt` file holds the user's query for what area they would like to r
 The API can retrieve weather data up to 10 days out from the current date. The `days_out.txt` file holds the user's query for how many days, up to 10, they want to view data.
 
 ## Requesting Data
-To request data, run the `weather_service.py` program while having the three required .txt files in the same system folder. See example .txt files to understand what is necessary to make the call.
+To request data, run the `weather_service.py` program while having the api_key.txt file in the same system folder. When a zipcode is detected in the zipcode.txt file, the microservice will then use the zipcode.txt and days_out.txt files to retrieve and return weather data. See example .txt files to understand what is necessary to make the call.
 
 ## Receiving Data
 Once the `weather_service.py` program has successfully run, the JSON weather data for the given location and date range will be available in a `weather_data.txt` file for the user to use in whatever manner they see fit.
